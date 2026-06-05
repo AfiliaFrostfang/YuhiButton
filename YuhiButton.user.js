@@ -82,7 +82,7 @@
     // Fetch version from JSON file using fetch
     async function fetchVersionData() {
         try {
-            const response = await fetch('https://yuhiamatsume.github.io/YuhiButton/version.json');
+            const response = await fetch('https://afiliafrostfang.github.io/YuhiButton/version.json');
             return await response.json();
         } catch (error) {
             console.error('Error fetching version data:', error);
