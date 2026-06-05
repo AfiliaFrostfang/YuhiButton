@@ -153,7 +153,7 @@
     if(!sessionStorage.aVehicleTypesNew || JSON.parse(sessionStorage.aVehicleTypesNew).lastUpdate < (new Date().getTime() - 4 * 500 * 60)) {
         try {
             // Change from $.getJSON to fetch API
-            const response = await fetch("https://yuhiamatsume.github.io/YuhiButton/vehicletype.json");
+            const response = await fetch("https://afiliafrostfang.github.io/YuhiButton/vehicletype.json");
             const data = await response.json();
             sessionStorage.setItem('aVehicleTypesNew', JSON.stringify({lastUpdate: new Date().getTime(), value: data}));
         } catch (error) {
